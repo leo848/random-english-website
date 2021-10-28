@@ -47,6 +47,9 @@
     let counter = 0;
     setInterval(()=>{
       p.innerHTML += Math.floor(Math.random()*10);
+      if (Math.random() < 0.1) {
+        p.innerHTML += "<br>";
+      }
     });
   </script>
 </body>
