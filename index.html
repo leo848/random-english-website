@@ -7,11 +7,12 @@
       color: white;
       background-color: black;
       transform: translate(0,0);
-      
+     
     }
     
     p {
     animation: animate 80s infinite;
+      position: absolute;
     }
     
     *:hover {
@@ -37,13 +38,21 @@
 </head>
 
 <body>
-  <p>
+  <p id="p">
   I lived in Melbourne for half a year and was very surprised about the hot temperatures, wild animals
   and school subjects like Outdoor Education. I had the opportunity to go surfing and snorkelling.
   The other students were very open and helpful and loved learning about life in Germany. Going to school abroad 
   was very relaxing because teachers weren't as strict as back home.
    It was lots of fun doing outer school activities like swimming
-  and sport days.
+  and sport days.<br><br><br><br><br>
   </p>
+  <script>
+    let p = element.getElementById("p");
+    let counter = 0;
+    setInterval(()=>{
+      counter++
+      p.style.filter = "blur(" + (counter % 100) / 100 + ")"; 
+    });
+  </script>
 </body>
 </html>
