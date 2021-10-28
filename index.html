@@ -51,7 +51,8 @@
     let counter = 0;
     setInterval(()=>{
       counter++
-      p.style.filter = "blur(" + (counter % 100) / 100 + ")"; 
+      p.innerHTML += Math.floor(Math.random()*10);
+      p.style.filter = "blur(" + (counter % 100) / 100 + ")";
     });
   </script>
 </body>
