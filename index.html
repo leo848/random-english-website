@@ -1,7 +1,24 @@
 <head>
   <style>
     * {
-      font: --apple-system 60;
+      font-family: --apple-system Helvetica Arial;
+      font-size: 60px;
+      transform: translate(0,0);
+      animation: animate 80s infinite;
+    }
+    
+    @keyframes animate {
+      0% {
+        filter: blur(0);
+      }
+      
+      90% {
+        filter: blur(3);
+      }
+      
+      100% {
+        filter: blur(0)
+      }
     }
   </style>
 </head>
