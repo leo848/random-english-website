@@ -47,12 +47,10 @@
   and sport days.<br><br><br><br><br>
   </p>
   <script>
-    let p = element.getElementById("p");
+    let p = document.getElementById("p");
     let counter = 0;
     setInterval(()=>{
-      counter++
       p.innerHTML += Math.floor(Math.random()*10);
-      p.style.filter = "blur(" + (counter % 100) / 100 + ")";
     });
   </script>
 </body>
